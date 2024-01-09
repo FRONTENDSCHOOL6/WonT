@@ -1,7 +1,7 @@
 import { useState, useId } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { useMutation, useQuery, QueryClient } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 
 import pocketbase from '@/api/pocketbase';
 import Header from '@/components/Header/Header';
@@ -14,8 +14,6 @@ import SelectHotelMap from '@/components/TripEdit/SelectHotelMap';
 import { DateStore } from '@/store/dateStore';
 import PlacePlan from '@/components/TripEdit/PlacePlan';
 import { useScheduleStore } from '@/store/scheduleStore';
-import { TripScheduleStore } from '@/store/tripScheduleStore';
-import { useEffect } from 'react';
 import { RecordModel } from 'pocketbase';
 import { PlaceListData, hotelListData } from '@/types/TripEdit';
 

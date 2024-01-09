@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import TripPlanEditButton from '@/components/TripPlanEditButton';
 import { getTripDate, getTripDateUTC } from '@/utils';
-import { useDateStore } from '@/store/dateStore';
+import { DateStore } from '@/store/dateStore';
 
 function TripPlan({ data, background = 'bg-secondary/50' }: any) {
   // 임시로 타입지정
-  const selectDate = useDateStore((set) => set.tripDate);
+  const selectDate = DateStore((set) => set.tripDate);
   return (
     <div className={`${background} px-6 py-[1.125rem] md:px-10 lg:px-8`}>
       <div className="mx-auto max-w-7xl">
