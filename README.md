@@ -142,7 +142,7 @@ pnpm dev
 - **장소 및 숙소 선택 페이지 (TripPlacePage, MyHotelPage)**
 
   - 로그인 유저 정보 활용한 TanStack Query 활용
-  - useToggleTripMenuStore(), useMapStore(), useScheduleStore() 이용한 상태관리
+  - useToggleTripMenuStore(), MapStore(), ScheduleStore() 이용한 상태관리
   - kakao Map API 활용한 선택 지역 실시간 정보 렌더링 기능 구현
     - 현재 선택한 지역으로 중심 좌표 검색 및 설정 (지도 기본값)
     - 장소/숙소 카테고리 검색결과 마커로 표시 (최대 15개)

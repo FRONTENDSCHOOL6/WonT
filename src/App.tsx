@@ -8,6 +8,12 @@ import router from '@/routes';
 import Spinner from '@/components/Spinner/Spinner';
 import AuthProvider from '@/contexts/Auth';
 
+declare global {
+  interface Window {
+    kakao: any;
+  }
+}
+
 // 쿼리 클라이언트 객체 생성
 const queryClient = new QueryClient({
   defaultOptions: {

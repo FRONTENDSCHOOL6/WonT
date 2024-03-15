@@ -26,9 +26,6 @@ dependencies:
   pocketbase:
     specifier: ^0.17.3
     version: 0.17.3
-  prop-types:
-    specifier: ^15.8.1
-    version: 15.8.1
   ramda:
     specifier: ^0.29.0
     version: 0.29.0
